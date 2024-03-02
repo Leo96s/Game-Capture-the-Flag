@@ -1,0 +1,30 @@
+--------------------Aula 06-------------------------
+->Listas 
+Mais flexiveis;
+Serve para usar quando nao se sabe ao certo o que se vai fazer;
+Adicao e remocao de elementos nao sao limitadas pela estrutura;
+
+    +Listas ordenadas:
+Temos de implementar comparable;
+Ordenar a partir do nome ou do valor;
+Estao sempre ordenados;
+
+    +Listas desordenadas:
+Nao precisa de implementar comparable;
+
+    +Listas indexadas:
+Listas com indice (o habitual);
+
+#Implementacoes:
+<<Interface>> ListADT extends Iterator
+<<Interface>> OrderedListADT extends ListADT
+<<Interface>> UnorderedListADT extends ListADT
+
+<<abstract class>> List implents ListADT;
+<<class>> OrderedList implements OrderedListADT extends List;
+<<class>> UnorderedList implements UnorderedListADT extends List;
+
+
+Utiliza listas duplemente ligadas;
+
+#Padrao de Software Iterator:
